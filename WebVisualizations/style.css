@@ -1,1 +1,7 @@
-to make hyperlink without underline, use a { text-decoration: none;}
+a {text-decoration: none;}
+
+body {background-color: rgb(198, 248, 248);}
+
+#Fig1 {
+    float: left;
+}
