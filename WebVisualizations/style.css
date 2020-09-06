@@ -1,7 +1,18 @@
+h1 {
+    text-align: center;
+}
+
 a {text-decoration: none;}
 
 body {background-color: rgb(198, 248, 248);}
 
 #Fig1 {
     float: left;
+}
+
+img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
