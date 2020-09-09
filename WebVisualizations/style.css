@@ -13,8 +13,8 @@ body {background-color: rgb(198, 248, 248);}
 img {
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 /* following ocdes coped from day 3 stu acitivty 4 */
