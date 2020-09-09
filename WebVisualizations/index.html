@@ -4,43 +4,43 @@
 <head>
   <meta charset="UTF-8">
   <title>Landing page Weatherpy</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Latitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Comparison <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Data</a>
-            </li>
-          </ul>
-        </div>
-    </nav>
+    <header>
+      <nav class = "navbar bg-dark navbar-dark navbar-expand-lg">
+          <a href="" class = "navbar-brand">Logo</a>
+          <button class = "navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class = "collapse navbar-collapse" id="mainNavbar">
+              <ul class = "navbar-nav ml-auto">
+                  <li class = "nav-item dropdown">
+                      <a href="" class = "nav-link dropdown-toggle" data-toggle="dropdown">Plots</a>
+                      <ul class="dropdown-menu">
+                          <li><a href="" class="dropdown-item">item1</a></li>
+                          <li><a href="" class="dropdown-item">item1</a></li>
+                          <li><a href="" class="dropdown-item">item1</a></li>
+                          <li><a href="" class="dropdown-item">item1</a></li>
+                      </ul>
+                  </li>
+                  <li class = "nav-item"><a href="" class = "nav-link">Comparison</a></li>
+                  <li class = "nav-item"><a href="" class = "nav-link">Data</a></li>
+              </ul>
+          </div>
+          
+      </nav>
+  </header>
+
+
     
     <div class = "container">
         <div class = "row">
             <div class = "col-md-8">
                 <!--summary-->
-                <h1>Summary: Latitude vs X</h1>
+                <h1>Summary: Latitude vs. X</h1>
                 <img id = "Fig1" width = "50%" src = "Resources/assets/images/Fig1.png">
                 <p>The purpose of this project was to analyze how weather changes as you get close to the equator.To accomplish this analysis we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</br></br>
                    After assembling the dataset, we used Matplotlib to plot various aspects of weather vs. latitude. Factors we looked at included: temperatue, cloudiness, wind speed and humidity. This site provides the source data and visualizations 
@@ -54,14 +54,17 @@
             </div>
             
             <div class = "col-md-4">
-                <!--visualosation-->
                 <h2>Visualisations</h2>
                 <div id = "images">
-                    <a id = "Fig1" width = "50%" href = "Temperature.html"> <img src = "Resources/assets/images/Fig1.png"> </a>
-                    <a id = "Fig2" width = "50%" href = "humidity.html">  <img src = "Resources/assets/images/Fig2.png"></a>
-                    <a id = "Fig3" width = "50%" href = "cloudiness.html">  <img src = "Resources/assets/images/Fig3.png"></a>
-                    <a id = "Fig4" width = "50%" href = "windspeed.html">   <img src = "Resources/assets/images/Fig4.png"></a>
+                    <a href = "Temperature.html"> <img width = "80%" src = "Resources/assets/images/Fig1.png"></a>
+                    <a href = "humidity.html">    <img width = "50%" src = "Resources/assets/images/Fig2.png"></a>
+                    <a href = "cloudiness.html"> <img width = "50%" src = "Resources/assets/images/Fig3.png"></a>
+                    <a href = "windspeed.html">    <img width = "50%" src = "Resources/assets/images/Fig4.png"></a>
                 </div>
+
+                </div>
+                 
+              </div>
 
             </div>
         </div>
@@ -70,5 +73,9 @@
 
 
     </div>
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
 </body>
+</html>
