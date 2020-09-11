@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Landing page Weatherpy</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap_cyborg.css">
 </head>
 <body>
     <!--navbar-->
@@ -40,8 +40,14 @@
         <div class = "row">
             <div class = "col-md-8">
                 <!--summary-->
-                <h1>Summary: Latitude vs. X</h1>
-                <img id = "Fig1" width = "50%" src = "Resources/assets/images/Fig1.png">
+                <br>
+                <h3 style="text-align:center">Summary: Latitude vs. X</h3>
+                <br>
+                <br>
+
+                <img id = "Fig1" alt = "" src = "Resources/assets/images/Fig1.png" class="center" >
+                <br>
+                <br>
                 <p>The purpose of this project was to analyze how weather changes as you get close to the equator.To accomplish this analysis we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</br></br>
                    After assembling the dataset, we used Matplotlib to plot various aspects of weather vs. latitude. Factors we looked at included: temperatue, cloudiness, wind speed and humidity. This site provides the source data and visualizations 
                    created as part of the analysis as well as explanations and descriptions of any trends and correlations witnessed.<br><br>
@@ -54,24 +60,31 @@
             </div>
             
             <div class = "col-md-4">
-                <h3>Visualisations</h3>
+              <br>
+              <br>
+              <br>
+                <h4 style = "text-align:center"> Visualisations </h4>
+                <br>
                 <div class="pic-grid">
                   <!-- Image grid -->
                   <div class="row">
                     <div class="col pic-col">
-                      <a target= "_blank" href="Temperature.html" title=""><img src="Resources/assets/images/Fig1.png" height = "95px" class="img-responsive"></a>
+                      <a target= "_blank" href="Temperature.html" title=""><img src="Resources/assets/images/Fig1.png" height = "100px" class="img-responsive"></a>
                     </div>
                     <div class="col pic-col">
-                      <a target= "_blank" href="humidity.html" title=""><img src="Resources/assets/images/Fig2.png" height = "95px" class="img-responsive"></a>
+                      <a target= "_blank" href="humidity.html" title=""><img src="Resources/assets/images/Fig2.png" height = "100px" class="img-responsive"></a>
                     </div>
                   </div>
                   <!-- End: row -->
+
+                  <br>
+                  <br>
                   <div class="row">
                     <div class="col pic-col">
-                      <a target= "_blank" href="cloudiness.html" title=""><img src="Resources/assets/images/Fig3.png" height = "95px" class="img-responsive"></a>
+                      <a target= "_blank" href="cloudiness.html" title=""><img src="Resources/assets/images/Fig3.png" height = "100px" class="img-responsive"></a>
                     </div>
                     <div class="col pic-col">
-                      <a target= "_blank" href="windspeed.html" title=""><img src="Resources/assets/images/Fig4.png" height = "95px" class="img-responsive"></a>
+                      <a target= "_blank" href="windspeed.html" title=""><img src="Resources/assets/images/Fig4.png" height = "100px" class="img-responsive"></a>
                     </div>
                   </div>
                   <!-- End: row -->

@@ -3,25 +3,111 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Bootstrap Components</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <title>Landing page Weatherpy</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="bootstrap_cyborg.css">
 </head>
-
 <body>
+    <!--navbar-->
+      <header>
+        <nav class = "navbar bg-dark navbar-dark navbar-expand-lg">
+            <a href="index.html" class = "navbar-brand">Latitude</a>
+            <button class = "navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class = "collapse navbar-collapse" id="mainNavbar">
+                <ul class = "navbar-nav ml-auto">
+                    <li class = "nav-item dropdown">
+                        <a href="" class = "nav-link dropdown-toggle" data-toggle="dropdown">Plots</a>
+                        <ul class="dropdown-menu">
+                            <li><a target= "_blank" href="Temperature.html" class="dropdown-item">Latitude vs Temperature</a></li>
+                            <li><a target= "_blank" href="humidity.html" class="dropdown-item">Latitude vs Humidity</a></li>
+                            <li><a target= "_blank" href="cloudiness.html" class="dropdown-item">Latitude vs Cloudiness</a></li>
+                            <li><a target= "_blank" href="windspeed.html" class="dropdown-item">Latitude vs Windspeed</a></li>
+                        </ul>
+                    </li>
+                    <li class = "nav-item"><a href="comparisons.html" class = "nav-link">Comparison</a></li>
+                    <li class = "nav-item"><a href="table.html" class = "nav-link">Data</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+      </header>
+
+
+    
     <div class = "container">
-        <section class = "row">
-            <div class = "col-md-8">         
-                <div class = "col-md-4">
-                    <!--visualosation-->
-                    <h2>Visualisations</h2>
-                    <div id = "images">
-                        <a href = "Temperature.html"> <img src = "Resources/assets/images/Fig1.png"> </a>
-                        <img src = "Resources/assets/images/Fig2.png">
-                        <img src = "Resources/assets/images/Fig3.png">
-                        <img src = "Resources/assets/images/Fig4.png">
+        <div class = "row">
+            <div class = "col-md-8">
+                <!--summary-->
+                <br>
+                <h3 style="text-align:center">Latitude vs. Temperature</h3>
+                <br>
+                <br>
+
+                <img id = "Fig1" alt = "" src = "Resources/assets/images/Fig1.png" class="center">
+                <br>
+                <br>
+                <p>Our data suggests that temperature decreases as you moves further away from the equator and towards the poles in both hemispheres. Interestingly, maximum temperature
+                   was not exactly around the equator. Locations around 20 degrees away from the equator on either hemisphere appear to have maximum temperature. This is likely due to the 
+                   inclination of the earth b23 degrees. As a result equator is not directly straight to the sun. <br><br>
+
+                   <a target = "_blank" href="https://github.com/susovd/python-api-challenge">Github link for Python API Project</a><br><br>
+                   Created by <a target = "_blank" href="https://github.com/susovd">Susov Dhakal</a> for Monash Data Analytics Bootcamp 2020.
+                </p>
+
+
+            </div>
+            
+            <div class = "col-md-4">
+              <br>
+              <br>
+              <br>
+                <h4 style = "text-align:center"> Visualisations </h4>
+                <br>
+                <div class="pic-grid">
+                  <!-- Image grid -->
+                  <div class="row">
+                    <div class="col pic-col">
+                      <a target= "_blank" href="Temperature.html" title=""><img src="Resources/assets/images/Fig1.png" height = "100px" class="img-responsive"></a>
                     </div>
+                    <div class="col pic-col">
+                      <a target= "_blank" href="humidity.html" title=""><img src="Resources/assets/images/Fig2.png" height = "100px" class="img-responsive"></a>
+                    </div>
+                  </div>
+                  <!-- End: row -->
+
+                  <br>
+                  <br>
+                  <div class="row">
+                    <div class="col pic-col">
+                      <a target= "_blank" href="cloudiness.html" title=""><img src="Resources/assets/images/Fig3.png" height = "100px" class="img-responsive"></a>
+                    </div>
+                    <div class="col pic-col">
+                      <a target= "_blank" href="windspeed.html" title=""><img src="Resources/assets/images/Fig4.png" height = "100px" class="img-responsive"></a>
+                    </div>
+                  </div>
+                  <!-- End: row -->
+                </div>
+                <!-- End: image grid -->
+            
+
+                
+
+              
+                 
+              </div>
+
+            </div>
+        </div>
+        
+        
+
 
     </div>
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
 </body>
+</html>
