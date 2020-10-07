@@ -13,14 +13,12 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
+  * [Website Specifications] (#Website-specifications)
+  * [Considerations](#considerations)
   * [Built With](#built-with)
 * [Usage](#usage)
-* [Getting Started](#getting-started)
-  * [Heroku](#heroku)
-  * [Local](#local)
-* [Contributors](#contributors)
-* [Acknowledgements](#acknowledgements)
-
+* [Results](#results)
+  
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
