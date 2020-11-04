@@ -71,7 +71,7 @@ The website has a navigation menu that at the top of every page:
 * [Bootstrap](https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css)
 
 ### Results
-The website is deployed to GitHub pages. <a href="https://susovd.github.io/Web-Design-Challenge/WebVisualizations/index.html" alt="Weather Visualisation Dashboard"> Weather Visualisation Dashboard</a>
+The website is deployed to GitHub pages. <a href="https://susovd.github.io/Weather-Visualisation-Dashboard/WebVisualizations/index.html" alt="Weather Visualisation Dashboard"> Weather Visualisation Dashboard</a>
 
 
 **Additional reference materials:**
