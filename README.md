@@ -35,7 +35,7 @@ The website consists of 7 pages total, including:
 * A landing page containing:
   * An explanation of the project.
   * Links to each visualizations page. There is a sidebar containing preview images of each plot, and clicking an image takes the user to that visualization.
-  "WebVisualizations/Images/landing.png"
+  WebVisualizations/Images/landing.png
 * Four visualization pages, each with:
   * A descriptive title and heading tag.
   * The plot/visualization itself for the selected comparison.
