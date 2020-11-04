@@ -40,14 +40,20 @@ The website consists of 7 pages total, including:
   * A descriptive title and heading tag.
   * The plot/visualization itself for the selected comparison.
   * A paragraph describing the plot and its significance.
+  ![Temperature](WebVisualizations/Images/latvstemp.png)
+  ![Windspeed](WebVisualizations/Images/latvswindspeed.png)
+  ![Humidity](WebVisualizations/Images/latvshumidity.png)
+  ![Cloudiness](WebVisualizations/Images/latvscloudiness.png)
 * A "Comparisons" page that:
   * Contains all of the visualizations on the same page so we can easily visually compare them.
   * Uses a Bootstrap grid for the visualizations.
     * The grid is two visualizations across on screens medium and larger, and 1 across on extra-small and small screens.
+    ![Comparisons](WebVisualizations/Images/comparisons.png)
 * A "Data" page that:
   * Displays a responsive table containing the data used in the visualizations.
     * The table is a bootstrap table component. 
     * The data comes from exporting the `.csv` file as HTML, or converting it to HTML. I used pandas to convert csv to HTML. Pandas has a nifty method approprately called `to_html` that allows you to generate a HTML table from a pandas dataframe. 
+    ![Data](WebVisualizations/Images/data.png)
 
 The website has a navigation menu that at the top of every page:
 
